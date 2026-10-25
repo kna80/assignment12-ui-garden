@@ -82,7 +82,7 @@ docker build -t ui-garden .
 Run the Docker container:
 
 ```bash
-docker run -d --name lastName_firstName_coding_assignment12 -p 8083:8083 ui-garden
+docker run -d --name Kaur_Khushdeep_coding_assignment12 -p 8083:8083 ui-garden
 ```
 
 Open the deployed application at:
