@@ -1,46 +1,116 @@
-# Getting Started with Create React App
+# 🌸 UI Garden — Web Component Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Assignment 12
 
-## Available Scripts
+A reusable and responsive web component library built using React, TypeScript, Styled Components, and Storybook.
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- React
+- TypeScript
+- Styled Components
+- Storybook
+- Jest
+- React Testing Library
+- Docker
+- Nginx
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Components
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Button
+2. Label
+3. Text
+4. Table (Header, Rows, Cells, Footer)
+5. Dropdown
+6. Radio Button
+7. Image
+8. Hero Image
+9. Card
 
-### `npm test`
+Each component includes Default and Disabled states in Storybook.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+Open the project folder and run:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Run React Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+Open the application at:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+http://localhost:3000
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Run Storybook
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm run storybook
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Open Storybook at:
 
-## Learn More
+http://localhost:6006
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Run Tests
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm test -- --watchAll=false
+```
+
+The project includes component tests using Jest and React Testing Library.
+
+## Production Build
+
+```bash
+npm run build
+```
+
+## Docker Deployment
+
+Build the Docker image:
+
+```bash
+docker build -t ui-garden .
+```
+
+Run the Docker container:
+
+```bash
+docker run -d --name lastName_firstName_coding_assignment12 -p 8083:8083 ui-garden
+```
+
+Open the deployed application at:
+
+http://localhost:8083
+
+## Docker Verification
+
+Check running containers:
+
+```bash
+docker ps
+```
+
+The React production application is served using Nginx on port 8083.
+
+## Features
+
+- Reusable React components
+- TypeScript support
+- Responsive styling
+- Styled Components
+- Storybook documentation
+- Customizable component properties
+- Default and Disabled states
+- Component testing
+- Docker deployment
+
+## Author
+
+Assignment 12 — Web Component Library
